@@ -1,0 +1,814 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Trip to Canterbury-Dover</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="816172e1-4b77-40fc-adfe-c1b52e5d0565" class="page sans"><header><img class="page-cover-image" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/file.jpg" style="object-position:center 36.1%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🚂</span></div><h1 class="page-title">Trip to Canterbury-Dover</h1></header><div class="page-body"><figure id="e561894b-8e27-4620-9b78-789f0ea637bb" class="image"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled.png"><img style="width:1px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled.png"/></a></figure><figure id="214cf505-ebae-4cba-ae18-3742906434e8" class="image"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%201.png"><img style="width:1px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%201.png"/></a></figure><figure id="0e9fff99-0b83-4349-b4ea-4979ecb6daee" class="image"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%202.png"><img style="width:1px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%202.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="29422692-c0f3-4141-8128-b1253040b473"><div style="font-size:1.5em"><span class="icon">🗓️</span></div><div style="width:100%"><strong>TRAVEL DATES:</strong>  <time>@2022/10/22</time> </div></figure><p id="d42ea30c-e94e-4c7d-af3f-3d9aa8f8fe99" class="">
+</p><div id="f58dea3d-737d-42af-89ff-2d717cf9f0ff" class="column-list"><div id="b1ce4c13-54f8-4466-bf42-7e9b2fb74fc5" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="418fd328-5106-4fa2-b7f9-b3e407139596"><div style="font-size:1.5em"><span class="icon">✈️</span></div><div style="width:100%"><strong>Get There: Manila 👉🏾Trainline 6：56出发 </strong><strong><time>@April 20, 2022 7:25 PM (CST)</time></strong><strong> </strong><ul id="e8f70018-7052-475e-b4e9-3c95e697e410" class="toggle"><li><details open=""><summary><strong>Hatfield</strong></summary><p id="cc21cd7d-1f9c-44f6-ae4d-6caabfbfd06e" class=""><em><strong>Round Trip▪️Economy▪️6 passengers</strong></em>
+🌐: <a href="https://www.flyscoot.com/en/">https://www.flyscoot.com/en/</a>
+📞: <a href="https://www.flyscoot.com/en/support/contact-us#">Live Chat</a>
+      PH: <a href="tel:+63282713965">+632 8271 3965</a>
+      SG: <a href="tel:+6531384047">+65 3138 4047</a>
+      ID: <a href="tel:+622150996882">+62 21 5099 6882</a></p><figure id="92ed1216-5e00-4767-8b32-6af1fa25af19"><div class="source"><a href="https://www.notion.soundefined"></a></div></figure></details></li></ul><ul id="ebf4e277-a024-4ac4-ab16-6e35b4239516" class="toggle"><li><details open=""><summary><strong>London kings cross</strong></summary><figure id="d4e3bef3-c175-4870-9e1f-8f25ed2d49c1" class="image"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%203.png"><img style="width:595px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%203.png"/></a></figure></details></li></ul><ul id="7a10f2d7-2b44-45ad-bd3c-f4d6fa440dac" class="toggle"><li><details open=""><summary><strong>London victoria</strong></summary></details></li></ul><ul id="182cbf30-fb2a-44fc-8f6f-d91986adb1b2" class="toggle"><li><details open=""><summary><strong>Canterbury East</strong></summary></details></li></ul></div></figure></div><div id="20efb1b7-8de7-44d6-aa42-b0f720cf424e" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="1051bafb-3385-445a-8ed0-a107a3debf30"><div style="font-size:1.5em"><span class="icon">🛩️</span></div><div style="width:100%"><strong>Get Back: Despansar 👉🏾 Manila, </strong><strong><time>@April 27, 2022 10:50 AM (CST)</time></strong><strong> </strong><ul id="e55d80bd-0dd7-4abd-b46d-70f459e30abe" class="toggle"><li><details open=""><summary><strong>Scoot Airlines </strong></summary><p id="f3fb52df-e7e1-4893-8477-ab9b386b9314" class=""><em><strong>Round Trip▪️Economy▪️6 passengers</strong></em>
+🌐: <a href="https://www.flyscoot.com/en/">https://www.flyscoot.com/en/</a>
+📞: <a href="https://www.flyscoot.com/en/support/contact-us#">Live Chat</a>
+      PH: <a href="tel:+63282713965">+632 8271 3965</a>
+      SG: <a href="tel:+6531384047">+65 3138 4047</a>
+      ID: <a href="tel:+622150996882">+62 21 5099 6882</a></p><figure id="4d3eb6c3-11a9-449c-bd0c-2666b4724cd1"><div class="source"><a href="https://www.notion.soundefined"></a></div></figure></details></li></ul><ul id="346a6889-4969-46e0-a430-797c2bee5201" class="toggle"><li><details open=""><summary><strong>Flight Trajectory</strong></summary><figure id="74706929-6345-4890-9df7-7f6e5ec2121c" class="image"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%204.png"><img style="width:583px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%204.png"/></a></figure></details></li></ul><p id="5fb0eb87-cada-4cdd-80c9-d60d573b2e51" class="">
+</p></div></figure></div></div><div id="895f3276-a92c-4615-b025-892bcabf26ab" class="column-list"><div id="c996796e-aa2f-4e09-99a0-80d501ff60d9" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="331d7e4f-4931-44e7-bc6b-15e926fb9e5d"><div style="font-size:1.5em"><span class="icon">🍔</span></div><div style="width:100%"><strong>Eat There:</strong></div></figure><p id="bbd0be52-54b8-4b9b-85a0-cdb927379c9c" class="">
+</p><p id="cd7f8a43-bd2d-4cf4-8d50-23e290cba4f1" class=""><div class="indented"><figure id="d67f84e1-2d55-411f-8f9b-e966560111be"><div class="source"><a href="https://www.google.com/maps/dir/Canterbury+Cathedral,+The+Precincts,+Canterbury/Hatfield/@51.3263331,0.5368039,10.54z/data=!4m14!4m13!1m5!1m1!1s0x47deca4aa51185d9:0xd5cea13e62d94916!2m2!1d1.0827998!2d51.2797971!1m5!1m1!1s0x487622c2ad50ed1d:0x3b18c69ece5fefb0!2m2!1d-0.22309!2d51.763366!3e3?hl=en">https://www.google.com/maps/dir/Canterbury+Cathedral,+The+Precincts,+Canterbury/Hatfield/@51.3263331,0.5368039,10.54z/data=!4m14!4m13!1m5!1m1!1s0x47deca4aa51185d9:0xd5cea13e62d94916!2m2!1d1.0827998!2d51.2797971!1m5!1m1!1s0x487622c2ad50ed1d:0x3b18c69ece5fefb0!2m2!1d-0.22309!2d51.763366!3e3?hl=en</a></div></figure><p id="a211ebad-543d-49b6-a312-4aca9d344112" class="">
+</p></div></p></div><div id="f23f1b9c-3269-445e-b6ce-7ae0af96433d" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="464fbf62-1ab4-466c-ab34-f80c52e8881b"><div style="font-size:1.5em"><span class="icon">🚗</span></div><div style="width:100%"><strong>Car Rental: </strong><ul id="8868287f-8301-4283-a719-3dcab59eb0ef" class="toggle"><li><details open=""><summary><strong>Toyoto Avanza P13,399z</strong></summary><p id="d644394c-8763-4d14-a9d1-4e955378da9a" class="">Book here: <a href="https://bit.ly/370K0u3">https://bit.ly/370K0u3</a></p><figure id="c82bcef7-ffd2-4463-9c80-3a632cd5699b" class="image"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%205.png"><img style="width:432px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%205.png"/></a></figure><figure id="5c6cdf98-0cc8-4dd3-97fa-2ad4e41173f6" class="image"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%206.png"><img style="width:293px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Untitled%206.png"/></a></figure></details></li></ul><p id="406b8689-d6de-4e2c-85ff-4e0ad3548b80" class="">
+</p></div></figure></div></div><div id="70de9d4b-664c-4b73-95f3-ccc09e61c058" class="column-list"><div id="74ed4c8b-d670-4668-8252-bc789fa9e51f" style="width:50%" class="column"><figure id="fdd7ad55-3a2d-4227-9b7a-8e45b575171e" class="link-to-page"><a href="https://www.notion.so/Passenger-Directory-and-Packing-List-fdd7ad553a2d42279b7a8e45b575171e"><span class="icon">🧳</span>Passenger Directory and Packing List</a></figure><figure id="95ee9a4a-7ccd-44af-b866-3951c3f0d6b4" class="link-to-page"><a href="https://www.notion.so/Travel-Inspo-95ee9a4a7ccd44afb8663951c3f0d6b4"><span class="icon">💡</span>Travel Inspo</a></figure><figure id="c581b69b-7f30-4081-8365-df42e37e6ff5" class="link-to-page"><a href="https://www.notion.so/Quick-Note-c581b69b7f3040818365df42e37e6ff5"><span class="icon">📌</span>Quick Note</a></figure><p id="5c922f57-c021-4b38-81dc-bbe8ef5b79a6" class="">
+</p></div><div id="8659dc9a-69d9-4d9f-bab6-0dd295db692d" style="width:50%" class="column"><figure id="79dd192a-6b70-4de7-8a87-8262f73fba86" class="link-to-page"><a href="https://www.notion.so/79dd192a6b704de78a878262f73fba86"><span class="icon">🗺️</span>Travel Spots and Contacts</a></figure><figure id="eb8ec432-9443-4bee-8911-e29ddf9f9abc" class="link-to-page"><a href="https://www.notion.so/Travel-Photos-eb8ec43294434bee8911e29ddf9f9abc"><span class="icon">🖼️</span>Travel Photos </a></figure></div></div><div id="89eca57c-fa2c-4d5d-9f62-52b217eac411" class="collection-content"><h4 class="collection-title">Schedules</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M8 15.126C11.8623 15.126 15.0615 11.9336 15.0615 8.06445C15.0615 4.20215 11.8623 1.00293 7.99316 1.00293C4.13086 1.00293 0.938477 4.20215 0.938477 8.06445C0.938477 11.9336 4.1377 15.126 8 15.126ZM8 13.7383C4.85547 13.7383 2.33301 11.209 2.33301 8.06445C2.33301 4.91992 4.84863 2.39746 7.99316 2.39746C11.1377 2.39746 13.6738 4.91992 13.6738 8.06445C13.6738 11.209 11.1445 13.7383 8 13.7383ZM7.62402 10.6348C7.79492 10.915 8.20508 10.9287 8.37598 10.6348L10.666 6.73145C10.8574 6.41016 10.7002 6.04102 10.3652 6.04102H5.62793C5.29297 6.04102 5.14941 6.43066 5.32031 6.73145L7.62402 10.6348Z"></path></svg></span>Status</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>﻿Activity</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesDate"><path d="M3.29688 14.4561H12.7031C14.1797 14.4561 14.9453 13.6904 14.9453 12.2344V3.91504C14.9453 2.45215 14.1797 1.69336 12.7031 1.69336H3.29688C1.82031 1.69336 1.05469 2.45215 1.05469 3.91504V12.2344C1.05469 13.6973 1.82031 14.4561 3.29688 14.4561ZM3.27637 13.1162C2.70898 13.1162 2.39453 12.8154 2.39453 12.2207V5.9043C2.39453 5.30273 2.70898 5.00879 3.27637 5.00879H12.71C13.2842 5.00879 13.6055 5.30273 13.6055 5.9043V12.2207C13.6055 12.8154 13.2842 13.1162 12.71 13.1162H3.27637ZM6.68066 7.38086H7.08398C7.33008 7.38086 7.41211 7.30566 7.41211 7.05957V6.66309C7.41211 6.41699 7.33008 6.3418 7.08398 6.3418H6.68066C6.44141 6.3418 6.35938 6.41699 6.35938 6.66309V7.05957C6.35938 7.30566 6.44141 7.38086 6.68066 7.38086ZM8.92285 7.38086H9.31934C9.56543 7.38086 9.64746 7.30566 9.64746 7.05957V6.66309C9.64746 6.41699 9.56543 6.3418 9.31934 6.3418H8.92285C8.67676 6.3418 8.59473 6.41699 8.59473 6.66309V7.05957C8.59473 7.30566 8.67676 7.38086 8.92285 7.38086ZM11.1582 7.38086H11.5547C11.8008 7.38086 11.8828 7.30566 11.8828 7.05957V6.66309C11.8828 6.41699 11.8008 6.3418 11.5547 6.3418H11.1582C10.9121 6.3418 10.8301 6.41699 10.8301 6.66309V7.05957C10.8301 7.30566 10.9121 7.38086 11.1582 7.38086ZM4.44531 9.58203H4.84863C5.09473 9.58203 5.17676 9.50684 5.17676 9.26074V8.86426C5.17676 8.61816 5.09473 8.54297 4.84863 8.54297H4.44531C4.20605 8.54297 4.12402 8.61816 4.12402 8.86426V9.26074C4.12402 9.50684 4.20605 9.58203 4.44531 9.58203ZM6.68066 9.58203H7.08398C7.33008 9.58203 7.41211 9.50684 7.41211 9.26074V8.86426C7.41211 8.61816 7.33008 8.54297 7.08398 8.54297H6.68066C6.44141 8.54297 6.35938 8.61816 6.35938 8.86426V9.26074C6.35938 9.50684 6.44141 9.58203 6.68066 9.58203ZM8.92285 9.58203H9.31934C9.56543 9.58203 9.64746 9.50684 9.64746 9.26074V8.86426C9.64746 8.61816 9.56543 8.54297 9.31934 8.54297H8.92285C8.67676 8.54297 8.59473 8.61816 8.59473 8.86426V9.26074C8.59473 9.50684 8.67676 9.58203 8.92285 9.58203ZM11.1582 9.58203H11.5547C11.8008 9.58203 11.8828 9.50684 11.8828 9.26074V8.86426C11.8828 8.61816 11.8008 8.54297 11.5547 8.54297H11.1582C10.9121 8.54297 10.8301 8.61816 10.8301 8.86426V9.26074C10.8301 9.50684 10.9121 9.58203 11.1582 9.58203ZM4.44531 11.7832H4.84863C5.09473 11.7832 5.17676 11.708 5.17676 11.4619V11.0654C5.17676 10.8193 5.09473 10.7441 4.84863 10.7441H4.44531C4.20605 10.7441 4.12402 10.8193 4.12402 11.0654V11.4619C4.12402 11.708 4.20605 11.7832 4.44531 11.7832ZM6.68066 11.7832H7.08398C7.33008 11.7832 7.41211 11.708 7.41211 11.4619V11.0654C7.41211 10.8193 7.33008 10.7441 7.08398 10.7441H6.68066C6.44141 10.7441 6.35938 10.8193 6.35938 11.0654V11.4619C6.35938 11.708 6.44141 11.7832 6.68066 11.7832ZM8.92285 11.7832H9.31934C9.56543 11.7832 9.64746 11.708 9.64746 11.4619V11.0654C9.64746 10.8193 9.56543 10.7441 9.31934 10.7441H8.92285C8.67676 10.7441 8.59473 10.8193 8.59473 11.0654V11.4619C8.59473 11.708 8.67676 11.7832 8.92285 11.7832Z"></path></svg></span>Date</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path></svg></span>Details</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z"></path></svg></span>Notes</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesFile"><path d="M12.5938 8.44043L7.54883 13.4854C6.26367 14.7773 4.54102 14.6475 3.44043 13.54C2.32617 12.4326 2.20312 10.7168 3.49512 9.4248L10.3926 2.52734C11.1445 1.77539 12.2725 1.63867 13.0039 2.37695C13.7422 3.11523 13.6055 4.22949 12.8535 4.98828L6.08594 11.7627C5.77832 12.0703 5.41602 11.9814 5.2041 11.7764C4.99902 11.5576 4.91016 11.2021 5.21777 10.8877L9.93457 6.1709C10.1738 5.93164 10.1875 5.58301 9.96191 5.35059C9.72949 5.13184 9.38086 5.13867 9.1416 5.37793L4.39746 10.1152C3.67285 10.8535 3.7002 11.9746 4.34961 12.624C5.05371 13.3281 6.12012 13.3145 6.8584 12.5762L13.6602 5.77441C14.9795 4.45508 14.9316 2.71875 13.7764 1.55664C12.6416 0.428711 10.8779 0.34668 9.55176 1.66602L2.61328 8.61816C0.883789 10.3477 1 12.8291 2.57227 14.4014C4.14453 15.9668 6.63281 16.0898 8.3623 14.3672L13.4414 9.28809C13.6738 9.0625 13.667 8.64551 13.4346 8.41992C13.209 8.18066 12.833 8.21484 12.5938 8.44043Z"></path></svg></span>Resources</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesNumber"><path d="M2.4834 10.9902H4.33594L3.75488 13.8887C3.74121 13.9639 3.72754 14.0664 3.72754 14.1416C3.72754 14.5381 3.99414 14.7637 4.39746 14.7637C4.81445 14.7637 5.09473 14.5449 5.18359 14.1143L5.80566 10.9902H8.79297L8.21191 13.8887C8.19824 13.9639 8.18457 14.0664 8.18457 14.1416C8.18457 14.5381 8.45117 14.7637 8.85449 14.7637C9.27148 14.7637 9.55176 14.5449 9.63379 14.1143L10.2627 10.9902H12.4502C12.9287 10.9902 13.2432 10.6758 13.2432 10.2109C13.2432 9.8418 12.9902 9.56836 12.6006 9.56836H10.5498L11.2129 6.28711H13.3662C13.8379 6.28711 14.1523 5.96582 14.1523 5.50098C14.1523 5.13184 13.9062 4.8584 13.5098 4.8584H11.5L12.0195 2.27441C12.0264 2.21973 12.0469 2.11035 12.0469 2.01465C12.0469 1.625 11.7666 1.39258 11.3633 1.39258C10.9053 1.39258 10.6797 1.63867 10.5977 2.05566L10.0303 4.8584H7.04297L7.5625 2.27441C7.57617 2.21973 7.58984 2.11035 7.58984 2.01465C7.58984 1.625 7.30957 1.39258 6.91309 1.39258C6.44824 1.39258 6.21582 1.63867 6.13379 2.05566L5.57324 4.8584H3.54297C3.06445 4.8584 2.75 5.18652 2.75 5.65137C2.75 6.03418 3.00293 6.28711 3.39258 6.28711H5.28613L4.62305 9.56836H2.63379C2.15527 9.56836 1.84082 9.89648 1.84082 10.3613C1.84082 10.7373 2.09375 10.9902 2.4834 10.9902ZM6.09277 9.56836L6.75586 6.28711H9.74316L9.08008 9.56836H6.09277Z"></path></svg></span>How much?</th><th><span class="icon property-icon"><svg viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesRelation"><path d="M13.1475 10.5869V3.72363C13.1475 3.25195 12.833 2.93066 12.3477 2.93066H5.48438C5.02637 2.93066 4.70508 3.27246 4.70508 3.67578C4.70508 4.07227 5.05371 4.40039 5.46387 4.40039H7.89746L10.8438 4.30469L9.59961 5.39844L3.08496 11.9199C2.92773 12.0771 2.8457 12.2686 2.8457 12.46C2.8457 12.8564 3.20801 13.2256 3.61816 13.2256C3.80957 13.2256 3.99414 13.1504 4.15137 12.9932L10.6729 6.47168L11.7803 5.22754L11.6641 8.05762V10.6074C11.6641 11.0176 11.9922 11.373 12.4023 11.373C12.8057 11.373 13.1475 11.0312 13.1475 10.5869Z"></path></svg></span>Related to Travel Spots and Contacts (Untitled Relation)</th></tr></thead><tbody><tr id="844e7a03-faf8-49c1-aec5-e69efffb93b0"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/1-Departure-to-SIN-844e7a03faf849c1aec5e69efffb93b0">1. Departure: @Ninoy Aquino International Airport (MNL) to @Singapore Changi Airport (SIN) (SIN)</a></td><td class="cell-@1e9"><time>@April 20, 2022 7:00 PM-11:10 PM</time></td><td class="cell-${ut">📍: Pasay, 1300 Metro Manila
+      <mark class="highlight-blue"><a href="https://bit.ly/3uckbzW">https://bit.ly/3uckbzW</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://www.miaa.gov.ph/">https://www.miaa.gov.ph/</a></mark>
+📞: 28771109</td><td class="cell-ym?&gt;">Get there soon as much as possible!</td><td class="cell-aP:c"><span style="margin-right:6px"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/1%20Departure%20@Ninoy%20Aquino%20International%20Airport%20(M%20844e7a03faf849c1aec5e69efffb93b0/9.jpg"><img style="width:20px;max-height:24px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/1%20Departure%20@Ninoy%20Aquino%20International%20Airport%20(M%20844e7a03faf849c1aec5e69efffb93b0/9.jpg" alt="9.jpg"/></a></span><span style="margin-right:6px"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/1%20Departure%20@Ninoy%20Aquino%20International%20Airport%20(M%20844e7a03faf849c1aec5e69efffb93b0/Christines_Resume.pdf">Christine&#x27;s Resume.pdf</a></span><span style="margin-right:6px"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/1%20Departure%20@Ninoy%20Aquino%20International%20Airport%20(M%20844e7a03faf849c1aec5e69efffb93b0/Resume.pdf">Resume.pdf</a></span><span style="margin-right:6px"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/1%20Departure%20@Ninoy%20Aquino%20International%20Airport%20(M%20844e7a03faf849c1aec5e69efffb93b0/Google_Meet_and_Google_Chat_Badge.png"><img style="width:20px;max-height:24px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/1%20Departure%20@Ninoy%20Aquino%20International%20Airport%20(M%20844e7a03faf849c1aec5e69efffb93b0/Google_Meet_and_Google_Chat_Badge.png" alt="Google Meet and Google Chat Badge.png"/></a></span></td><td class="cell-@&gt;Cb">₱81,888.00</td><td class="cell-?FOM"><a href="https://www.notion.so/Ninoy-Aquino-International-Airport-MNL-072c74aad1884a03aa213e90381a31fc">Ninoy Aquino International Airport (MNL)</a></td></tr><tr id="cd81acbf-7722-4eb2-80f6-dd6773950ce9"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/2-Arrival-at-Overnight-layover-for-8-hours-cd81acbf77224eb280f6dd6773950ce9">2. Arrival at @Singapore Changi Airport (SIN), Overnight layover for 8 hours. 😔</a></td><td class="cell-@1e9"><time>@April 20, 2020 11:10 PM (CST) → April 21, 2020 7:10 AM (CST)</time></td><td class="cell-${ut">📍: Airport Blvd., Singapore
+      <mark class="highlight-blue"><a href="https://bit.ly/3u8e1B5">https://bit.ly/3u8e1B5</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://www.changiairport.com/">https://www.changiairport.com/</a></mark>
+📞: +6565956868</td><td class="cell-ym?&gt;">It’s nice that our stop-over will be at <mark class="highlight-teal_background">Changi Airport</mark>. Love this Airport. </td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"></td></tr><tr id="5e222abe-0b9f-4fdb-a0eb-16dd742cdb73"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/3-Eat-at-and-Rest-5e222abe0b9f4fdba0eb16dd742cdb73">3. Eat at @Terminal 1 Staff Canteen and Rest</a></td><td class="cell-@1e9"><time>@April 2, 2022</time></td><td class="cell-${ut">What: Terminal 1 Staff Canteen
+📍: 9X6R+CJ Singapore
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3K7P5iC">https://bit.ly/3K7P5iC</a></mark></td><td class="cell-ym?&gt;"></td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb">₱3,000.00</td><td class="cell-?FOM"><a href="https://www.notion.so/Terminal-1-Staff-Canteen-811c164515e746748e2ea17cedbae5bf">Terminal 1 Staff Canteen </a></td></tr><tr id="6cccfb7c-7aa9-4bc7-a7e6-75790babdf19"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/4-Departure-to-6cccfb7c7aa94bc7a7e675790babdf19">4. Departure: @Singapore Changi Airport (SIN)  to @Ngurah Rai International Airport (DPS)</a></td><td class="cell-@1e9"><time>@April 21, 2022 7:10 AM-9:50 AM</time></td><td class="cell-${ut">📍: Airport Blvd., Singapore
+      <mark class="highlight-blue"><a href="https://bit.ly/3u8e1B5">https://bit.ly/3u8e1B5</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://www.changiairport.com/">https://www.changiairport.com/</a></mark>
+📞: +6565956868</td><td class="cell-ym?&gt;">Prepare all your documents, the next flight is up</td><td class="cell-aP:c"><span style="margin-right:6px"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/4%20Departure%20@Singapore%20Changi%20Airport%20(SIN)%20to%20@Ng%206cccfb7c7aa94bc7a7e675790babdf19/Gmail_Badge.png"><img style="width:20px;max-height:24px" src="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/4%20Departure%20@Singapore%20Changi%20Airport%20(SIN)%20to%20@Ng%206cccfb7c7aa94bc7a7e675790babdf19/Gmail_Badge.png" alt="Gmail Badge.png"/></a></span><span style="margin-right:6px"><a href="Trip%20to%20Canterbury-Dover%20816172e14b7740fcadfec1b52e5d0565/Schedules%2089eca57cfa2c4d5d9f6252b217eac411/4%20Departure%20@Singapore%20Changi%20Airport%20(SIN)%20to%20@Ng%206cccfb7c7aa94bc7a7e675790babdf19/On_the_Rise_employee_openings_IanVergelCuevas_-_Sheet1.pdf">On the Rise employee openings_IanVergelCuevas - Sheet1.pdf</a></span></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Singapore-Changi-Airport-SIN-8382e30f720e400fa40986b4b9951fe5">Singapore Changi Airport (SIN)</a></td></tr><tr id="4208b884-2c42-40ce-968c-86f6294da672"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/5-Arrival-at-4208b8842c4240ce968c86f6294da672">5. Arrival at @Ngurah Rai International Airport (DPS)</a></td><td class="cell-@1e9"><time>@April 21, 2022 9:50 AM (CST)</time></td><td class="cell-${ut">📍: Jalan Raya Gusti Ngurah Rai, Tuban, Kec. Kuta, Kabupaten Badung, Bali 80362, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3Kbe6JK">https://bit.ly/3Kbe6JK</a></mark>
+🌐: <mark class="highlight-blue"><a href="http://bali-airport.com/">http://bali-airport.com/</a></mark>
+📞:  +623619351011</td><td class="cell-ym?&gt;">Finally we’re now in Bali</td><td class="cell-aP:c"><span style="margin-right:6px"><a href="https://www.thepoortraveler.net/2019/12/bali-itinerary-travel-guide/">https://www.thepoortraveler.net/2019/12/bali-itinerary-travel-guide/</a></span></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Ngurah-Rai-International-Airport-DPS-c5015f51e5774e658a9c825b0d933b1e">Ngurah Rai International Airport (DPS)</a></td></tr><tr id="fd03e935-ae4f-4f42-9457-6fa7c4efe631"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/Check-into-the-fd03e935ae4f4f4294576fa7c4efe631">Check into the @J4 Hotels Legian </a></td><td class="cell-@1e9"><time>@April 21, 2022</time></td><td class="cell-${ut">📍: Jln Legian No.74, Br Pengabetan, Kuta, Badung Regency, Bali 80361, Indonesia
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3Kd0kXb">https://bit.ly/3Kd0kXb</a></mark>
+🌐: <mark class="highlight-blue"><a href="http://www.j4hotels.com/">http://www.j4hotels.com/</a></mark>
+📞: +623618469747</td><td class="cell-ym?&gt;"><mark class="highlight-teal_background">Book first online</mark> to reserve a room, which is <mark class="highlight-teal_background">Grand Superior</mark> price at <mark class="highlight-teal_background">14,000 pesos for 7 days.</mark></td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb">₱14,000.00</td><td class="cell-?FOM"><a href="https://www.notion.so/J4-Hotels-Legian-69dfb86186904e7d9b9c35d8260af4c3">J4 Hotels Legian</a></td></tr><tr id="fb1acfdb-f0de-42ea-a147-4cc868e88013"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/fb1acfdbf0de42eaa1474cc868e88013">@Jaens Spa Ubud </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Raya Pengosekan Ubud, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3DHpYAM">https://bit.ly/3DHpYAM</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://jaensspa.com/">https://jaensspa.com/</a></mark>
+📞: +6282144439147</td><td class="cell-ym?&gt;">Mask is required here and temperature checks.
+
+<mark class="highlight-teal_background">1 hour of Traditional Balinese Massage</mark>
+<mark class="highlight-teal_background">2 hour of Flow Relax Massage</mark>
+for <mark class="highlight-teal_background">5 persons worth almost 20K</mark></td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb">₱20,000.00</td><td class="cell-?FOM"><a href="https://www.notion.so/Jaens-Spa-Ubud-c679692df7c24ac0a9e051f333545aaf">Jaens Spa Ubud</a></td></tr><tr id="ac4f30e1-0668-4a1d-97d4-1ba47c5e8985"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/ac4f30e106684a1d97d41ba47c5e8985">@5GX Bali</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jalan Legian No.99, Legian, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3ua1OM2">https://bit.ly/3ua1OM2</a></mark>
+📞: +6281999733399</td><td class="cell-ym?&gt;">Just wanna try that single terrifying once in a lifetime experience ride. 
+<mark class="highlight-teal_background">300/person for 3 ppl</mark>
+Note: They only have one ride and that is this ride. Also this place is just in direct front of our hotel😯😁</td><td class="cell-aP:c"><span style="margin-right:6px"><a href="https://lh5.googleusercontent.com/p/AF1QipMB-HfLImFRso5v6eS8izOYcJfqk32jHSnyR4BI=w408-h265-k-no">https://lh5.googleusercontent.com/p/AF1QipMB-HfLImFRso5v6eS8izOYcJfqk32jHSnyR4BI=w408-h265-k-no</a></span></td><td class="cell-@&gt;Cb">₱500.00</td><td class="cell-?FOM"><a href="https://www.notion.so/5GX-Bali-7d8a64240f3f4338a957ff1245160799">5GX Bali</a></td></tr><tr id="5bf3bbf0-e1da-4b81-8641-2ef763423554"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/5bf3bbf0e1da4b8186412ef763423554">@Bali Jungle Adventure Park</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Banjar, Payungan, Kec. Selat, Kabupaten Klungkung, Bali 80716, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3LK03eM">https://bit.ly/3LK03eM</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://bit.ly/3x4AOj2">https://bit.ly/3x4AOj2</a></mark>
+📞:+6281236131362 / <mark class="highlight-blue">reservation@balijungleadventurepark.com</mark>
+</td><td class="cell-ym?&gt;">This is gonna be a blast for sure. &#x27;Cuz of <mark class="highlight-teal_background">water rafting</mark>😁, zipline, treetop adventure, and lots of different action stuff. So I think this will be my favorite part of our trip. ☺️😄</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb">₱15,000.00</td><td class="cell-?FOM"><a href="https://www.notion.so/Bali-Jungle-Adventure-Park-b99c14d34f0a4999b5eae52d3e574b94">Bali Jungle Adventure Park</a></td></tr><tr id="a5b9d4bb-0d08-4f24-b344-718686ec4702"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/a5b9d4bb0d084f24b344718686ec4702">@Bali Museum </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Mayor Wisnu No.1, Dangin Puri, Kec. Denpasar Tim., Kota Denpasar, Bali 80232, Indonesia
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3NO2Ipw">https://bit.ly/3NO2Ipw</a></mark>
+📞: +62361222680</td><td class="cell-ym?&gt;">A Museum baby! 😁</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Bali-Museum-cf4f31c1302741b49553348b2b040a50">Bali Museum</a></td></tr><tr id="3552359c-6dba-4821-854c-ffb222c4a4e2"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/3552359c6dba4821854cffb222c4a4e2">@Waterbom Bali</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Kartika Plaza, Tuban, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3jao0zo">https://bit.ly/3jao0zo</a></mark>
+🌐: <mark class="highlight-blue"><a href="http://waterbom-bali.com/">http://waterbom-bali.com/</a></mark>
+📞: +62361755676</td><td class="cell-ym?&gt;">A Water Themed Park. Full of slides and action! 🏊‍♀️😁☺️</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb">₱10,000.00</td><td class="cell-?FOM"><a href="https://www.notion.so/Waterbom-Bali-ee31b51a27804ea6bb2b35ff8691fc84">Waterbom Bali</a></td></tr><tr id="112d9a35-86a7-4648-a75f-84da942caaa7"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/112d9a3586a74648a75f84da942caaa7">@Ubud Palace </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Raya Ubud No.8, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia
+      <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3r6sn2V">https://bit.ly/3r6sn2V</a></mark>
+🌐:<mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="http://www.ubudpalace.com/">http://www.ubudpalace.com/</a></mark></td><td class="cell-ym?&gt;">Wow A Palace!🛕😯</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Ubud-Palace-c86dc1a294d34c5b8b80e5c3bf4ce3e7">Ubud Palace</a></td></tr><tr id="3b9db41c-f67d-4b33-928c-45ac7459ee19"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/3b9db41cf67d4b33928c45ac7459ee19">@Transmart Carrefour </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Sunset Road Building, Jl. Sunset Road Jl. Glogor Carik, Pemogan, Denpasar Selatan, Kabupaten Badung, Bali 80221, Indonesia
+     <mark class="highlight-blue"><a href="https://bit.ly/3uclcs7">https://bit.ly/3uclcs7</a></mark>
+📞: +6282208255125</td><td class="cell-ym?&gt;">Supermarket 😁. This is where I’m gonna be buying most of my needs</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Transmart-Carrefour-186a85d6c8c442a98ebcb738b3fd0c10">Transmart Carrefour</a></td></tr><tr id="f45a6beb-95c8-4a72-8b2f-85d510eed316"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/f45a6beb95c84a728b2f85d510eed316">@The Blanco Renaissance Museum</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Raya Campuhan, Sayan, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3j8U9rc">https://bit.ly/3j8U9rc</a></mark>
+📞:+62361975502</td><td class="cell-ym?&gt;">A museum! 😁💗</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/The-Blanco-Renaissance-Museum-cb26c13b373e4ef58d2671249a53f613">The Blanco Renaissance Museum</a></td></tr><tr id="13d0f785-6e74-4fa8-b04e-35cecaf10c7e"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/13d0f7856e744fa8b04e35cecaf10c7e">@Scuba Duba Doo Dive Center Bali</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍:Jl. Legian Kelod, Gg. Melani No.3B, Legian, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3Kdepnv">https://bit.ly/3Kdepnv</a></mark>
+🌐: <mark class="highlight-blue"><a href="http://www.divecenterbali.com/">http://www.divecenterbali.com/</a></mark>
+📞: +62818556275</td><td class="cell-ym?&gt;">The agency who&#x27;s gonna guide us to dive and snorkel. 🤿🏊‍♀️</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb">₱9,000.00</td><td class="cell-?FOM"><a href="https://www.notion.so/Scuba-Duba-Doo-Dive-Center-Bali-9df02bbeead9467a8aef3e5e7a3337a0">Scuba Duba Doo Dive Center Bali</a></td></tr><tr id="dbc36ebf-09fb-461f-b008-1bfc321fd8c2"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/dbc36ebf09fb461fb0081bfc321fd8c2">@Saraswati Temple </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍:Jl. Kajeng, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia
+     <mark class="highlight-blue"><a href="https://bit.ly/3Kbw9Q0">https://bit.ly/3Kbw9Q0</a></mark></td><td class="cell-ym?&gt;">Georgeus temple of a Hindu Goddess.🛕</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Saraswati-Temple-3d277d5b48ee46a1b5d0e6187b95eedc">Saraswati Temple</a></td></tr><tr id="16c365cc-01b7-46dc-a910-d3afc3eee4f8"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/16c365cc01b746dca910d3afc3eee4f8">@Sacred Monkey Forest Sanctuary </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Monkey Forest, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia
+    <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3J9ycmn">https://bit.ly/3J9ycmn</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://bit.ly/3O0yNKW">https://bit.ly/3O0yNKW</a></mark>
+📞: +62361971304</td><td class="cell-ym?&gt;">Hindu temple complex set in the jungle, renowned for the macaque monkeys who call it home.</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Sacred-Monkey-Forest-Sanctuary-046f9db873e1444bb935b54479196725">Sacred Monkey Forest Sanctuary</a></td></tr><tr id="d105829a-9f1d-427b-8315-7e7a4939e5d2"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/d105829a9f1d427b83157e7a4939e5d2">@Pura Dalem Agung Padangtegal</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍:Jl. Monkey Forest, Ubud, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia
+    <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3DJKn8r">https://bit.ly/3DJKn8r</a></mark></td><td class="cell-ym?&gt;">Hindu temple within the Ubud monkey forest, known for its morbid stone carvings &amp; wild macaques.</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Pura-Dalem-Agung-Padangtegal-0acaa50448e04fc6bc61876e71f2138d">Pura Dalem Agung Padangtegal</a></td></tr><tr id="de577ada-9184-4ca1-b3cb-bb886c8444aa"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/de577ada91844ca1b3cbbb886c8444aa">@Power Of Now Oasis</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Retro Beach, Sanur Kauh, Denpasar Selatan, Kota Denpasar, Bali 80224, Indonesia
+    <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3NO87Nk">https://bit.ly/3NO87Nk</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://powerofnowoasis.com/">https://powerofnowoasis.com/</a></mark></td><td class="cell-ym?&gt;">The Yoga Center. ☺️🧘‍♂️🧘‍♀️
+Identifies as women-owned</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb">₱2,000.00</td><td class="cell-?FOM"><a href="https://www.notion.so/Power-Of-Now-Oasis-531c6f20d9ff4a9091f7e49be4b6ce5e">Power Of Now Oasis</a></td></tr><tr id="a15ae2aa-c574-4890-adb7-beb9abd65ff3"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/a15ae2aac5744890adb7beb9abd65ff3">@KFC </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Raya Kuta No.105, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+     <mark class="highlight-blue"><a href="https://bit.ly/38ioBwL">https://bit.ly/38ioBwL</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://kfcku.com/">https://kfcku.com/</a></mark>
+📞: +622114022</td><td class="cell-ym?&gt;">Restaurant chain known for its buckets of fried chicken, plus wings &amp; sides.
+
+<strong><strong>Service options</strong></strong>
+• No-contact delivery
+• Delivery
+• Drive-through
+• Takeout
+• Dine-in
+</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/KFC-b5a0670b886e40cb8abfa7fca5139bfd">KFC</a></td></tr><tr id="c3567454-27ea-4477-8bba-387d71d7acfb"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/c356745427ea44778bba387d71d7acfb">@Don Juan Mexican Restaurant and Bar</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Pantai Kuta No.3, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3LM1utc">https://bit.ly/3LM1utc</a></mark>
+🌐: <mark class="highlight-blue"><a href="http://www.donjuan.id/">http://www.donjuan.id/</a></mark>
+📞: +623614756117</td><td class="cell-ym?&gt;">A Mexican Restaurant that a must try. Just down the road of our hotel. 
+
+<strong><strong>Service options</strong></strong>
+• No-contact delivery
+• Delivery
+• Takeout
+• Dine-in</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Don-Juan-Mexican-Restaurant-and-Bar-73c046d00e114eb4b72f3ff41a15c1f9">Don Juan Mexican Restaurant and Bar</a></td></tr><tr id="aef32760-d41b-4e33-89e0-d315ef5544cb"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/aef32760d41b4e3389e0d315ef5544cb">@#7 Seafood Restaurant (巴厘小龙虾海鲜排档) </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Bypass Ngurah Rai No.7, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+    <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3LH1wCh">https://bit.ly/3LH1wCh</a></mark>
+📞: +6281238589004</td><td class="cell-ym?&gt;">If ever we wanna eat Seafoods. 🍢🦞😋
+
+<strong><strong>Service options</strong></strong>
+• Delivery
+• Takeout
+• Dine-in</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/7-Seafood-Restaurant-eadac0fe6a4e4b69a936ab43d4aa8077">#7 Seafood Restaurant (巴厘小龙虾海鲜排档)</a></td></tr><tr id="405fc65d-ec57-4618-967c-6457fde19088"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/405fc65dec574618967c6457fde19088">@Legian Beach </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Bali, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3jevQbb">https://bit.ly/3jevQbb</a></mark><mark class="highlight-blue">
+</mark></td><td class="cell-ym?&gt;">Just at the top of Kuta Beach. Free also, best for sunset. 😎
+
+Wide sandy beach close to hotels, bars &amp; cafes known for its sunset views &amp; surfable waves.</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Legian-Beach-5936d571cc154995b2af4d255061b500">Legian Beach</a></td></tr><tr id="9dabe079-60b9-41e3-bc25-367e1224e84d"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/9dabe07960b941e3bc25367e1224e84d">@Kuta Beach</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Kuta, Badung Regency, Bali, Indonesia
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3j45AjY">https://bit.ly/3j45AjY</a></mark>
+🌐: <mark class="highlight-blue"><a href="http://kutabeachbalii.com/">http://kutabeachbalii.com/</a></mark>
+</td><td class="cell-ym?&gt;">Free Beach and Surfing spot just kilometer away from our Hotel. 😁☺️
+
+Bustling sandy stretch lined with restaurants &amp; resorts, a well-known spot for surfing &amp; sunsets.</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Kuta-Beach-c5a2e7c356c24bc68a251424148d9faf">Kuta Beach</a></td></tr><tr id="4361b8f7-a01d-4bef-927a-3ad90fb5779a"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/4361b8f7a01d4bef927a3ad90fb5779a">@Krisna Oleh - Oleh Bali Sunset Road</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Sunset Road No.88, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3uVuYho">https://bit.ly/3uVuYho</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://krisnabali.co.id/">https://krisnabali.co.id/</a></mark>
+📞: +62361750031</td><td class="cell-ym?&gt;">Souvenir Shop. Probably our last destination. 🥺
+
+<strong><strong>Health &amp; safety</strong></strong>
+• Appointment required</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Krisna-Oleh-Oleh-Bali-Sunset-Road-13f2b840f4eb4c1babc335a68f5cc9f2">Krisna Oleh - Oleh Bali Sunset Road</a></td></tr><tr id="c57d2657-771d-4abd-b693-ac67fd10397c"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/c57d2657771d4abdb693ac67fd10397c">@Jln Legian Street</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Kuta, Badung Regency, Bali 80361, Indonesia
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3Jh72Kd">https://bit.ly/3Jh72Kd</a></mark></td><td class="cell-ym?&gt;">Lively Street just outside of our hotel. 😁</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Jln-Legian-Street-99f48ab424724130a265f6e1ad39ebda">Jln Legian Street</a></td></tr><tr id="acfca13a-2e16-47c2-bd04-4c7e912b2952"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/acfca13a2e1647c2bd044c7e912b2952">@Domino&#x27;s Pizza </a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Raya Kuta No 105 Kel Kuta, Kuta, South Kuta, Badung Regency, Bali 80361, Indonesia
+      <mark class="highlight-blue"><a href="https://bit.ly/3ubA9ul">https://bit.ly/3ubA9ul</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://bit.ly/3J5sAcU">https://bit.ly/3J5sAcU</a></mark>
+📞: +621500366</td><td class="cell-ym?&gt;">Ooooh! Pizza 🍕😋
+Delivery/carryout chain offering a wide range of pizzas &amp; a variety of other dishes &amp; sides.
+
+<strong><strong>Service options</strong></strong>
+• No-contact delivery
+• Delivery
+• Takeout
+• Dine-in</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Domino-s-Pizza-ec28e7eaa338408fb77d00b286f9d541">Domino&#x27;s Pizza</a></td></tr><tr id="0892e2b8-4574-4db9-9102-0580fcd5d0b0"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/0892e2b845744db991020580fcd5d0b0">@Pura Gunung Lebah</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Raya Ubud No.23, Sayan, Kecamatan Ubud, Kabupaten Gianyar, Bali 80571, Indonesia
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3j69U1U">https://bit.ly/3j69U1U</a></mark></td><td class="cell-ym?&gt;">Ancient temple in scenic jungle surrounds with ornate carvings &amp; colorful statues.</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Pura-Gunung-Lebah-3896f7b87835435f9cfc36f33fc5e609">Pura Gunung Lebah</a></td></tr><tr id="e3818b25-3c59-4fde-b12e-4808b1f2dc95"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/e3818b253c594fdeb12e4808b1f2dc95">@Mu Gung Hwa Korean Supermarket Bali</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Sunset Road No.6, Seminyak, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+      <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/3Keomkp">https://bit.ly/3Keomkp</a></mark>
+📞: +623614752734</td><td class="cell-ym?&gt;">If ever we wanna eat Korean Food. 😋
+
+<strong><strong>Service options</strong></strong>
+• No-contact delivery
+• Delivery
+• In-store pickup
+• In-store shopping</td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb"></td><td class="cell-?FOM"><a href="https://www.notion.so/Mu-Gung-Hwa-Korean-Supermarket-Bali-0f3626e6d2f64135bac5bdb62fa69adb">Mu Gung Hwa Korean Supermarket Bali</a></td></tr><tr id="aaf42ed1-3e5c-431c-a732-21612f1afcc3"><td class="cell-MXvb"><span class="selected-value select-value-color-red">Next up</span></td><td class="cell-title"><a href="https://www.notion.so/dysseys-S-aaf42ed13e5c431ca73221612f1afcc3">@Odysseys Surf School dysseys S</a></td><td class="cell-@1e9"></td><td class="cell-${ut">📍: Jl. Pantai Kuta, Kuta, Kec. Kuta, Kabupaten Badung, Bali 80361, Indonesia
+     <mark class="highlight-blue"> </mark><mark class="highlight-blue"><a href="https://bit.ly/35Kp4XH">https://bit.ly/35Kp4XH</a></mark>
+🌐: <mark class="highlight-blue"><a href="https://bit.ly/3JdKE4F">https://bit.ly/3JdKE4F</a></mark>
+📞: +62817550021</td><td class="cell-ym?&gt;">Surfing Lesson 😍
+
+<strong>Health &amp; safety
+</strong>Measure taken here
+Appointment required
+Mask required
+Temperature check required
+
+Mondays-Sundays: <strong>8AM–6PM</strong></td><td class="cell-aP:c"></td><td class="cell-@&gt;Cb">₱1,700.00</td><td class="cell-?FOM"><a href="https://www.notion.so/Odysseys-Surf-School-eea9377198964882b746df6114e0c9b9">Odysseys Surf School</a></td></tr></tbody></table></div><p id="2d34c9e2-0f80-4566-97c4-eb22c051f33b" class="">
+</p><h3 id="88c0b4ca-4429-4556-9d89-6b4bc405f535" class="">Map</h3><p id="9dc73c94-0967-4442-8cf3-72234ff0ce2c" class="block-color-gray">Click the link below for the list of travel spots in Google Maps.</p><figure id="afb57cd7-de85-4fe2-9210-c5feaab17e74"><a href="https://goo.gl/maps/pBxheNTciYV4Ncvt6" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Ian Vergel Cuevas&#x27;s &quot;Favorites&quot; List</div><div class="bookmark-description">Find local businesses, view maps and get driving directions in Google Maps.</div></div><div class="bookmark-href"><img src="https://www.google.com/images/branding/product/ico/maps15_bnuw3a_32dp.ico" class="icon bookmark-icon"/>https://goo.gl/maps/pBxheNTciYV4Ncvt6</div></div><img src="https://lh5.googleusercontent.com/p/AF1QipMHE-W0iLQ1NB0Klmk4Lc36bFcYfb7wDPKVWTXY=w256-h256-k-no-p" class="bookmark-image"/></a></figure><p id="397b2429-b0de-4c90-83ed-32478b4be727" class="">
+</p></div></article></body></html>
